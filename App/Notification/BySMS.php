@@ -66,8 +66,8 @@ class BySMS
         $create_at = date('Y-m-d h:m:s', time());
 
         $sql = "INSERT INTO `log` ( `date`, `MobileNumber`, `smsContent`)
-VALUES
-	( '{$create_at}', '{$MobileNumber}', '{$message}');";
+        VALUES
+        ( '{$create_at}', '{$MobileNumber}', '{$message}');";
 
         if (mysqli_query($DB_CON, $sql)) {
 //            echo "New record created successfully";
